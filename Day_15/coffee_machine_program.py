@@ -37,62 +37,6 @@ resources = {
 #       4. Check if transaction successful?
 #       5. Make Coffee
 
-#
-# def display_resources():
-#     return f"Water: {available_water}ml \nMilk: {available_milk}ml \nCoffee: {available_coffee}g"
-
-
-# def make_money_transaction(menu_item):
-#     quarters = int(input("how many quarters?:"))
-#     dimes = int(input("how many dimes?:"))
-#     nickels = int(input("how many nickels?:"))
-#     pennies = int(input("how many pennies?:"))
-#     total_coins_value = quarters*0.25 + dimes*0.10 + nickels*0.05 + pennies*0.01
-#     cost = MENU[menu_item]["cost"]
-#     if total_coins_value-cost >= 0:
-#         print(f"Here is ${total_coins_value-cost} in change.")
-#         global profit
-#         profit += cost
-#         make_order(menu_choice)
-#     else:
-#         print("Sorry that's not enough profit. Money refunded.")
-
-
-# def make_order(menu_item):
-#     available_water = resources["water"]-MENU[menu_item]["ingredients"]["water"]
-#     available_coffee = resources["coffee"]-MENU[menu_item]["ingredients"]["coffee"]
-#     available_milk = resources["milk"]-MENU[menu_item]["ingredients"]["milk"] if menu_item != "espresso" else resources["milk"]
-#     print(f"Here is your {menu_item} ☕. Enjoy!")
-
-
-# available_water = resources["water"]
-# available_milk = resources["milk"]
-# available_coffee = resources["coffee"]
-
-    # elif menu_choice == "espresso":
-    #     is_resource_available = check_resources(menu_choice)
-    #     if is_resource_available:
-    #         print("Please insert Coins")
-    #         make_money_transaction(menu_choice)
-    #     else:
-    #         print("Sorry,there is not enough resources.")
-    #
-    # elif menu_choice == "latte":
-    #     is_resource_available = check_resources(menu_choice)
-    #     if is_resource_available:
-    #         print("Please insert Coins")
-    #         make_money_transaction(menu_choice)
-    #     else:
-    #         print("Sorry,there is not enough resources.")
-    #
-    # elif menu_choice == "cappuccino":
-    #     is_resource_available = check_resources(menu_choice)
-    #     if is_resource_available:
-    #         print("Please insert Coins")
-    #         make_money_transaction(menu_choice)
-    #     else:
-    #         print("Sorry,there is not enough resources.")
-
 
 def check_resource_sufficient(order_ingredients):
     """Checks if the resources are enough to make a coffee"""
